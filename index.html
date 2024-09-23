@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Guess the Flag!</title>
+</head>
+
+<body>
+    <h1 class="heading">
+        <i class="fa-regular fa-flag"></i>
+        Guess the Flag!</h1>
+
+    <div class="quiz-container">
+        <div id="flag-container">
+            <div id="flag-image"></div>
+        </div>
+        <div id="answer-container" class="answer-button">
+            <button class="btn">Country Name #1</button>
+            <button class="btn">Country Name #2</button>
+            <button class="btn">Country Name #3</button>
+        </div>
+        <div class="control-container">
+            <button id="next-button" class="next-btn btn">Next -></button>
+        </div>
+    </div>
+    <div class="counter-container">
+        <p class="counter">
+            Correct
+            <span id="correct">0</span>
+        </p>
+        <p>
+            <progress id="quiz" max="10" value="1"></progress>
+            <label for="quiz">Quiz Progress</label>
+        </p>
+        <p class="counter">
+            Incorrect
+            <span id="incorrect">0</span>
+        </p>
+    </div>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/11e7424762.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
