@@ -62,7 +62,7 @@ body {
 
 }
 
-.intro {
+.intro-to-quiz {
     display: flex;
     align-items: center;
     text-align: center;
@@ -83,7 +83,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 35vh;
     margin-bottom: 15px;
 }
 
@@ -115,7 +115,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 .counter-container {
@@ -159,6 +159,6 @@ body {
 
 }
 
-.next-btn {
+/* .next-btn {
     display: none;
-}
+} */
