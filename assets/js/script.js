@@ -13,7 +13,6 @@ nextButton.addEventListener('click', () => {
     nextFlag();
 });
 
-
 function startQuiz() {
     startButton.classList.add('hide');
     introElement.classList.add('hide');
