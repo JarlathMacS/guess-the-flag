@@ -27,11 +27,7 @@ function startQuiz() {
 
     shuffledFlags = flagDeck.sort(() => Math.random() - .5);
 
-    // shuffledFlags = (array) => {
-    //     let shuffledData = array.slice().sort(() => Math.random() - 0.5);
-    //     console.log(shuffledData);
-    //     return shuffledData;
-    // };
+
 
     currentFlagIndex = 0;
 
@@ -47,7 +43,6 @@ function nextFlag() {
 
 function showFlag(country) {
     flagElement.innerHTML = country.image;
-    // console.log(flagElement.innerHTML);
     country.choices.forEach(choice => {
         const button = document.createElement('button');
         button.innerText = choice.text;
