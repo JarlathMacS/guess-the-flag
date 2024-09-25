@@ -86,5 +86,165 @@ const flagDeck = [{
                 correct: false
             }
         ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/aw.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'Cape Verde',
+                correct: false
+            },
+            {
+                text: 'Ethiopia',
+                correct: false
+            },
+            {
+                text: 'Aruba',
+                correct: true
+            }
+        ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/gh.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'Ghana',
+                correct: true
+            },
+            {
+                text: 'Kuwait',
+                correct: false
+            },
+            {
+                text: 'Marshall Islands',
+                correct: false
+            }
+        ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/mz.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'Mozambique',
+                correct: true
+            },
+            {
+                text: 'Paraguay',
+                correct: false
+            },
+            {
+                text: 'Laos',
+                correct: false
+            }
+        ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/pm.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'Wallis and Futuna',
+                correct: false
+            },
+            {
+                text: 'Liechtenstein',
+                correct: false
+            },
+            {
+                text: 'Saint Pierre and Miquelon',
+                correct: true
+            }
+        ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/bl.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'South Georgia',
+                correct: false
+            },
+            {
+                text: 'Saint Barthélemy',
+                correct: true
+            },
+            {
+                text: 'Niue',
+                correct: false
+            }
+        ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/am.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'Armenia',
+                correct: true
+            },
+            {
+                text: 'Seychelles',
+                correct: false
+            },
+            {
+                text: 'Côte d\'Ivoire',
+                correct: false
+            }
+        ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/zm.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'Togo',
+                correct: false
+            },
+            {
+                text: 'Gabon',
+                correct: false
+            },
+            {
+                text: 'Zambia',
+                correct: true
+            }
+        ]
+    },
+    {
+        image: `
+        <div id="flag-image">
+        <img id="flag" class="flag" src="assets/images/flags/rw.jpg" alt="country flag">
+        </div>
+        `,
+        choices: [{
+                text: 'Macau',
+                correct: false
+            },
+            {
+                text: 'Rwanda',
+                correct: true
+            },
+            {
+                text: 'Timor-Leste',
+                correct: false
+            }
+        ]
     }
 ];
