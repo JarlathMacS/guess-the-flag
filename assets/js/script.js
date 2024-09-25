@@ -4,12 +4,8 @@ const introElement = document.getElementById('intro-to-quiz');
 const flagContainer = document.getElementById('flag-container');
 const answerContainer = document.getElementById('answer-container');
 const flagElement = document.getElementById('flag-image');
-// const answerButtons = document.getElementById('answer-container');
 
 let shuffledFlags, currentFlagIndex;
-
-// let quizFlags = shuffledFlags(flagDeck);
-// currentFlagIndex;
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
@@ -19,7 +15,6 @@ nextButton.addEventListener('click', () => {
 
 
 function startQuiz() {
-    // console.log('started');
     startButton.classList.add('hide');
     introElement.classList.add('hide');
     flagContainer.classList.remove('hide');
@@ -27,18 +22,14 @@ function startQuiz() {
 
     shuffledFlags = flagDeck.sort(() => Math.random() - .5);
 
-
-
     currentFlagIndex = 0;
 
     nextFlag();
-
 }
 
 function nextFlag() {
     resetQuiz();
     showFlag(shuffledFlags[currentFlagIndex]);
-
 }
 
 function showFlag(country) {
@@ -54,8 +45,6 @@ function showFlag(country) {
 
         button.addEventListener('click', selectAnswer);
         answerContainer.appendChild(button);
-
-
     });
 }
 
@@ -64,15 +53,12 @@ function resetQuiz() {
 
     while (answerContainer.firstChild) {
         answerContainer.removeChild(answerContainer.firstChild);
-
     }
-
 }
 
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    //   setStatusClass(document.body, correct)
     Array.from(answerContainer.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
