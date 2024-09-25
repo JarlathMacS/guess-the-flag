@@ -1,9 +1,10 @@
 const startButton = document.getElementById('start-button');
+const nextButton = document.getElementById('next-button');
 const introElement = document.getElementById('intro-to-quiz');
 const flagContainer = document.getElementById('flag-container');
 const answerContainer = document.getElementById('answer-container');
 const flagElement = document.getElementById('flag-image');
-const answerButtons = document.getElementById('answer-container');
+// const answerButtons = document.getElementById('answer-container');
 
 let shuffledFlags, currentFlagIndex;
 
@@ -11,9 +12,14 @@ let shuffledFlags, currentFlagIndex;
 // currentFlagIndex;
 
 startButton.addEventListener('click', startQuiz);
+nextButton.addEventListener('click', () => {
+    currentFlagIndex++;
+    nextFlag();
+});
+
 
 function startQuiz() {
-    console.log('started');
+    // console.log('started');
     startButton.classList.add('hide');
     introElement.classList.add('hide');
     flagContainer.classList.remove('hide');
@@ -34,18 +40,69 @@ function startQuiz() {
 }
 
 function nextFlag() {
+    resetQuiz();
     showFlag(shuffledFlags[currentFlagIndex]);
 
 }
 
 function showFlag(country) {
     flagElement.innerHTML = country.image;
-    console.log(flagElement.innerHTML);
+    // console.log(flagElement.innerHTML);
+    country.choices.forEach(choice => {
+        const button = document.createElement('button');
+        button.innerText = choice.text;
+        button.classList.add('btn');
+
+        if (choice.correct) {
+            button.dataset.correct = choice.correct;
+        }
+
+        button.addEventListener('click', selectAnswer);
+        answerContainer.appendChild(button);
+
+
+    });
 }
 
-function selectAnswer() {
+function resetQuiz() {
+    nextButton.classList.add('hide');
+
+    while (answerContainer.firstChild) {
+        answerContainer.removeChild(answerContainer.firstChild);
+
+    }
 
 }
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    //   setStatusClass(document.body, correct)
+    Array.from(answerContainer.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
+    if (shuffledFlags.length > currentFlagIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        startButton.innerText = 'Restart ->';
+        startButton.classList.remove('hide');
+    }
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('incorrect');
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
+}
+
 
 const flagDeck = [{
         image: `
