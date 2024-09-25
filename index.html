@@ -22,18 +22,31 @@
         Guess the Flag!</h1>
 
     <div class="quiz-container">
-        <div id="flag-container">
+        <div class="intro">
+            <p>
+                Guess the Flag is a fun quiz game which tests your knowledge of the different flags of the world.
+                If you like geography or world affairs, this is a great way to learn about different countries and their
+                flags.<br><br>
+
+                The flags are shown at random, which you must identify from the 3 choices presented. See how many you
+                can guess,
+                and if you can improve on your scores!
+            </p>
+        </div>
+        <div class="flag-container hide">
             <div id="flag-image">
-                <img src="assets/images/flags/mz.jpg" alt="country flag">
+                <img class="flag" src="assets/images/flags/mz.jpg" alt="country flag">
             </div>
         </div>
-        <div id="answer-container" class="answer-button">
+        <div class="answer-container answer-button hide">
             <button class="btn">Country Name #1</button>
-            <button class="btn">Country Name #2</button>
+            <button class="btn">United Kingdom</button>
             <button class="btn">Country Name #3</button>
         </div>
         <div class="control-container">
-            <button id="next-button" class="next-btn btn">Next -></button>
+            <button id="start-button" class="start-btn btn">Start -></button>
+            <button id="next-button" class="next-btn btn hide">Next -></button>
+
         </div>
     </div>
     <div class="counter-container">

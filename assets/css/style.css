@@ -6,6 +6,13 @@
 
 body {
     background-color: white;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    letter-spacing: 1.2px;
+
+
+    /* color: white; */
 }
 
 /* box-sizing: border-box;
@@ -16,6 +23,19 @@ body {
 .heading {
     text-align: center;
     font-size: 2.5rem;
+    text-transform: uppercase;
+    /* background-color: #fafafa; */
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    margin-top: 0;
+
+
 }
 
 .logo {
@@ -29,48 +49,116 @@ body {
     background-color: #E6ECF0;
     box-sizing: border-box;
     width: 90vw;
-    height: 50vh;
+    height: 66vh;
     /* max-height: 450px;
     max-width: 830px; */
     margin-left: auto;
     margin-right: auto;
     /* padding: 1%; */
+    /* display: flex;
+    justify-content: center; */
+
+
+
 }
 
-.counter-container {
-    background-color: bisque;
-    width: 90vw;
-    height: 25vh;
+.intro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #009edb;
+    height: 55vh;
+    width: 25vw;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: space-around;
+    font-size: 150%;
+    border-radius: 15%;
+    padding: 0 10px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+
 }
 
-#flag-container {
-    background-color: aqua;
+.flag-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30vh;
+    margin-bottom: 15px;
 }
 
 #flag-image {
     height: 240px;
 }
 
-#answer-container {
-    background-color: chocolate;
+.flag {
+    border-radius: 0.5em;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+
+
+}
+
+.answer-container {
+    /* background-color: chocolate; */
     display: flex;
     width: 90vw;
     height: 15vh;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .control-container {
     background-color: darkgoldenrod;
     display: flex;
     justify-content: center;
-    height: 5vh;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 5px;
+}
+
+.counter-container {
+    background-color: bisque;
+    width: 90vw;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    background-color: #009edb;
+    color: black;
+    padding: 30px 60px;
+    font-size: 150%;
+    font-weight: bold;
+    border: 1px transparent;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.incorrect {
+    background-color: red;
+}
+
+.hide {
+    /* visibility: hidden; */
+    display: none;
+
+}
+
+.next-btn {
+    display: none;
 }
