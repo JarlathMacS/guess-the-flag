@@ -1,131 +1,119 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Jarlath Mac S,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
-
-### Connecting your Mongo database
-
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
 ---
 
-Happy coding!
+# Guess the Flag!
+
+The quiz is an interactive way to learn about the different countries of the world, through identifying their flags.
+
+![Responsive Mockup](media/dublin_pug_rescue_mockup.png)
+
+## Features 
+
+### Existing Features
+
+- __Navigation Bar__
+
+- This appears at the top of all 4 pages.  The logo is on the right side, which is a link to the home page itself.  
+- The links on the left side are to the Home page, Meet our Pugs page, and Contact us page and are uniform across pages.
+- These 3 navigation links change color and are underlined when the user hovers the cursor over them, when viewed on small laptops and larger screen sizes (992px and larger).
+- These elements ensure the user can easily navigate their way through and around the website.
+
+![Nav Bar](media/dublin_pug_rescue_nav.png)
+
+- __The Home page hero image__
+
+  - Here we have an attractive background image, overlaid with the name of the organization, along with the suggested action words a user might take.
+  
+![Hero image](media/dublin_pug_rescue_hero.png)
+
+- __Why get a dog? section__
+
+  - Multiple possible motivations for, and benefits of, owning a dog are presented, both physical and mental. 
+  - Users are encouraged to consider getting any dog first and foremost for all the benefits presented. 
+
+![Why get a dog image](media/dublin_pug_rescue_why_dog.png)
+
+- __Why adopt a dog? section__
+
+  - This section presents the advantages of choosing to adopt a dog, focusing more on the mental and emotional benefits here.
+  - Users are presented with 5 strong reasons for adoption when looking for a dog. 
+
+![Why adopt image](media/dublin_pug_rescue_why_adopt.png)
+
+- __The footer__ 
+
+  - The footer has 4 links to social media sites.  The links all open to a new tab to allow for easy navigation for the user. 
+
+![Footer](media/dublin_pug_rescue_footer.png)
+
+- __Meet our Pugs page__
+
+  - The page presents images of a variety of different age pugs, aiming to create interest from users in what the organization's mission is.
+  - This section is invaluable to the user as they can see, from a variety of different pugs, hopefully the possibility of further engaging the organization. 
+
+![Meet our pugs page](media/dublin_pug_rescue_meet.png)
+
+- __Contact us page__
+
+  - Here the user can take action to contact the organization, whether with an interest in adopting, fostering, volunteering, or donating to the organization.  
+
+![Contact us page](media/dublin_pug_rescue_contact.png)
+
+- __Response page__
+
+  - This page displays after the user has submitted their contact details.  It presents a confirmation and thank you message.  It promises that they will receive a reply within 24 hours, to preserve their interest.
+
+![Response page](media/dublin_pug_rescue_response.png)
+
+### Possible future features
+
+- Providing more specific details about each pug pictured, biographies, etc.
+
+## Testing 
+
+- The website was tested and works correctly on the following browsers: Chrome, Firefox, Safari.
+- Functionality, responsiveness, and appearance were all good.
+- The website was checked by using devtools to make sure it looks good on all screen sizes.
+- Manual testing showed all features work as intended.
+- The contact us form works as intended, and includes validation.
+
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official W3C validator.
+- CSS
+  - No errors were found when passing through the official (Jigsaw) validator.
+- Lighthouse
+  - Accessibility of color palette used, and alt attributes, etc. was confirmed.
+
+![Lighthouse](media/lighthouse.png)
+
+### Unfixed Bugs
+
+No unfixed bugs.
+
+## Deployment
+
+- The site was deployed to GitHub pages.  The steps for deployment are as follows: 
+  - In the GitHub repository, click on the Settings tab.  On the left menu, click on the pages option.
+  - Under the build and deployment, under branch, select main and root options.  Click the save button. 
+
+The live link can be found here - (https://jarlathmacs.github.io/portfolio-project-1/index.html)
+
+## Credits 
+
+### Content 
+
+- The HTML code to make the social media links in the footer was taken from the Love Running project.
+- The CSS code in the media query for >=1200px for the reasons to own a dog section, is taken from the Love Running project.
+- The icons in the footer and throughout the website were taken from [Font Awesome](https://fontawesome.com).
+- The text used in the Why get a dog section was taken from (https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-q-and-a-how-owning-pets-can-lead-to-a-healthier-lifestyle)
+- The text used in the 5 Reasons to adopt section was taken from (https://www.aspca.org/news/10-reasons-adopt-shelter-dog)
+
+### Media
+
+- The favicon and logo were created using the website [Brandmark](https://brandmark.io)
+- The hero image was taken from (https://www.pugsandkisses.com/listing/898987938/pug-wall-art-hats-and-ties-pug-art-print)
+- The images used for the Meet our Pugs page were taken from [Austin Pug Rescue](https://austinpugrescue.com)
+- The image for the circle-cover-bg element and the Contact us page were taken from (https://www.instagram.com/ring0thepug)
+- The image in the 5 Reasons to adopt was taken from (https://www.google.com/url?sa=i&url=https%3A%2F%2Fespace-trail-du-couserans.com%2F%3Fs%3Dpugs-life-movie-poster-%25E2%2580%2593-your-art-by-you-bb-Ayd6LWfl&psig=AOvVaw2trlyuYa4xoO13IRaztsVm&ust=1721712418610000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqGAoTCIiC5ez0uYcDFQAAAAAdAAAAABC1EQ)
