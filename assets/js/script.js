@@ -66,6 +66,7 @@ function selectAnswer(e) {
     Array.from(answerContainer.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
+
     if (shuffledFlags.length > currentFlagIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
