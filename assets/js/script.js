@@ -20,11 +20,15 @@ function startQuiz() {
     flagContainer.classList.remove('hide');
     answerContainer.classList.remove('hide');
 
+    // Math.random generates random numbers
     shuffledFlags = flagDeck.sort(() => Math.random() - .5);
 
     currentFlagIndex = 0;
 
     nextFlag();
+
+    clearCounters();
+
 }
 
 function nextFlag() {
@@ -59,18 +63,21 @@ function resetQuiz() {
     }
 }
 
+
 function selectAnswer(e) {
 
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
+
+    if (correct) {
+        incrementCorrect();
+    } else {
+        incrementIncorrect();
+    }
+
     Array.from(answerContainer.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
-
-
-
-
-
 
     if (shuffledFlags.length > currentFlagIndex + 1) {
         nextButton.classList.remove('hide');
@@ -80,13 +87,19 @@ function selectAnswer(e) {
     }
 }
 
+/**
+ * Checks the correct boolean of the answer button
+ * and adds a correct or incorrect class to the button
+ */
 function setStatusClass(element, correct) {
 
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
+        // incrementCorrect();
     } else {
         element.classList.add('incorrect');
+        // incrementIncorrect();
     }
 }
 
@@ -94,6 +107,29 @@ function clearStatusClass(element) {
 
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+}
+
+function clearCounters() {
+    document.getElementById("correct").innerText = '0';
+    document.getElementById("incorrect").innerText = '0';
+
+}
+
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementCorrect() {
+    let oldScore = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++oldScore;
+
+}
+
+/**
+ * Gets the tally of incorrect answers from the DOM and increments it by 1
+ */
+function incrementIncorrect() {
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 const flagDeck = [{

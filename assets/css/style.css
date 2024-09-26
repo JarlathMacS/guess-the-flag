@@ -162,3 +162,15 @@ body {
 /* .next-btn {
     display: none;
 } */
+.counter-container {
+    font-size: 150%;
+
+}
+
+.correct-counter {
+    color: green;
+}
+
+.incorrect-counter {
+    color: red;
+}
