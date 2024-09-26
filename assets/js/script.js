@@ -14,6 +14,7 @@ nextButton.addEventListener('click', () => {
 });
 
 function startQuiz() {
+
     startButton.classList.add('hide');
     introElement.classList.add('hide');
     flagContainer.classList.remove('hide');
@@ -27,11 +28,13 @@ function startQuiz() {
 }
 
 function nextFlag() {
+
     resetQuiz();
     showFlag(shuffledFlags[currentFlagIndex]);
 }
 
 function showFlag(country) {
+
     flagElement.innerHTML = country.image;
     country.choices.forEach(choice => {
         const button = document.createElement('button');
@@ -48,6 +51,7 @@ function showFlag(country) {
 }
 
 function resetQuiz() {
+
     nextButton.classList.add('hide');
 
     while (answerContainer.firstChild) {
@@ -56,6 +60,7 @@ function resetQuiz() {
 }
 
 function selectAnswer(e) {
+
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
     Array.from(answerContainer.children).forEach(button => {
@@ -70,6 +75,7 @@ function selectAnswer(e) {
 }
 
 function setStatusClass(element, correct) {
+
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
@@ -79,12 +85,13 @@ function setStatusClass(element, correct) {
 }
 
 function clearStatusClass(element) {
+
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 }
 
-
 const flagDeck = [{
+
         image: `
         <div id="flag-image">
         <img id="flag" class="flag" src="assets/images/flags/pl.jpg" alt="country flag">
