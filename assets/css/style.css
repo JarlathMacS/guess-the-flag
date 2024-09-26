@@ -99,7 +99,6 @@ body {
 }
 
 .answer-container {
-    /* background-color: chocolate; */
     display: flex;
     width: 90vw;
     height: 15vh;
@@ -110,12 +109,10 @@ body {
 }
 
 .control-container {
-    /* background-color: darkgoldenrod; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
-    /* margin-bottom: 5px; */
 }
 
 .counter-container {
@@ -127,6 +124,8 @@ body {
     margin-top: 25px;
     display: flex;
     justify-content: space-around;
+    font-size: 150%;
+
 }
 
 .btn {
@@ -154,16 +153,7 @@ body {
 }
 
 .hide {
-    /* visibility: hidden; */
     display: none;
-
-}
-
-/* .next-btn {
-    display: none;
-} */
-.counter-container {
-    font-size: 150%;
 
 }
 
@@ -189,4 +179,51 @@ body {
     border-radius: 15px;
     padding: 10px;
     text-align: center;
+}
+
+/* --------- Media queries */
+
+@media (max-width: 280px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+    .intro-to-quiz {
+        font-size: 75%;
+        width: 75vw;
+        height: 55vh;
+
+
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+
+    .flag {
+        height: 50%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+
+    }
+
+
+
 }
