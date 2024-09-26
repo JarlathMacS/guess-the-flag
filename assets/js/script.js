@@ -14,6 +14,9 @@ nextButton.addEventListener('click', () => {
     nextFlag();
 });
 
+/**
+ * Sets up the page to begin the quiz, shuffles the deck of countries data
+ */
 function startQuiz() {
 
     startButton.classList.add('hide');
@@ -23,23 +26,29 @@ function startQuiz() {
 
     // Math.random generates random numbers
     shuffledFlags = flagDeck.sort(() => Math.random() - .5);
-
+    //Start with the first flag in the shuffled deck
     currentFlagIndex = 0;
 
     nextFlag();
-
+    //Removes the previous quiz score
     clearCounters();
-
+    //Set the progress counter 
     counterElement.innerText = '1';
 
 }
 
+/**
+ * Calls up next flag from the shuffled deck 
+ */
 function nextFlag() {
 
     resetQuiz();
     showFlag(shuffledFlags[currentFlagIndex]);
 }
 
+/**
+ * Populates the HTML with the flag image, creates the corresponding answer buttons
+ */
 function showFlag(country) {
 
     let oldCounter = parseInt(counterElement.innerText);
@@ -50,7 +59,7 @@ function showFlag(country) {
         const button = document.createElement('button');
         button.innerText = choice.text;
         button.classList.add('btn');
-
+        //Assign the correct button only
         if (choice.correct) {
             button.dataset.correct = choice.correct;
         }
@@ -60,6 +69,9 @@ function showFlag(country) {
     });
 }
 
+/**
+ * Removes the previous answer buttons and their data
+ */
 function resetQuiz() {
 
     nextButton.classList.add('hide');
@@ -69,7 +81,12 @@ function resetQuiz() {
     }
 }
 
-
+/**
+ * Takes the button selected as an answer by the user and checks if it is stored as correct,
+ * increments scores, assigns relevant classes to the answer buttons, which will cause their background
+ * colours to change.  Checks if there are any more countries left in the shuffled deck, if not then restart
+ * button is presented 
+ */
 function selectAnswer(e) {
 
     const selectedButton = e.target;
@@ -95,26 +112,31 @@ function selectAnswer(e) {
 
 /**
  * Checks the correct boolean of the answer button
- * and adds a correct or incorrect class to the button
+ * and adds a correct or incorrect class to the button,
+ * causing their background colours to change
  */
 function setStatusClass(element, correct) {
 
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
-        // incrementCorrect();
     } else {
         element.classList.add('incorrect');
-        // incrementIncorrect();
     }
 }
 
+/**
+ * Removes any previous designation 
+ */
 function clearStatusClass(element) {
 
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 }
 
+/**
+ * Resets the score counters to 0 
+ */
 function clearCounters() {
     document.getElementById("correct").innerText = '0';
     document.getElementById("incorrect").innerText = '0';
@@ -122,7 +144,7 @@ function clearCounters() {
 }
 
 /**
- * Gets the current score from the DOM and increments it by 1
+ * Gets the correct score and increments it by 1
  */
 function incrementCorrect() {
     let oldScore = parseInt(document.getElementById("correct").innerText);
@@ -131,13 +153,16 @@ function incrementCorrect() {
 }
 
 /**
- * Gets the tally of incorrect answers from the DOM and increments it by 1
+ * Gets the incorrect score and increments it by 1
  */
 function incrementIncorrect() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
+/**
+ * Array of (10) country objects
+ */
 const flagDeck = [{
 
         image: `
