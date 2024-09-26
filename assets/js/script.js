@@ -1,3 +1,4 @@
+//Variables
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const introElement = document.getElementById('intro-to-quiz');
@@ -8,10 +9,16 @@ const counterElement = document.getElementById('counter');
 
 let shuffledFlags, currentFlagIndex;
 
-startButton.addEventListener('click', startQuiz);
-nextButton.addEventListener('click', () => {
-    currentFlagIndex++;
-    nextFlag();
+/**
+ * Wait for the page to load, then add event listeners
+ */
+document.addEventListener("DOMContentLoaded", function () {
+
+    startButton.addEventListener('click', startQuiz);
+    nextButton.addEventListener('click', () => {
+        currentFlagIndex++;
+        nextFlag();
+    });
 });
 
 /**
