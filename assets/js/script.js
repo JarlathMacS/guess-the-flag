@@ -4,6 +4,7 @@ const introElement = document.getElementById('intro-to-quiz');
 const flagContainer = document.getElementById('flag-container');
 const answerContainer = document.getElementById('answer-container');
 const flagElement = document.getElementById('flag-image');
+const counterElement = document.getElementById('counter');
 
 let shuffledFlags, currentFlagIndex;
 
@@ -29,6 +30,8 @@ function startQuiz() {
 
     clearCounters();
 
+    counterElement.innerText = '1';
+
 }
 
 function nextFlag() {
@@ -38,6 +41,9 @@ function nextFlag() {
 }
 
 function showFlag(country) {
+
+    let oldCounter = parseInt(counterElement.innerText);
+    counterElement.innerText = ++oldCounter;
 
     flagElement.innerHTML = country.image;
     country.choices.forEach(choice => {
