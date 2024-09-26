@@ -1,3 +1,5 @@
+//Certain logic was used from the following https://github.com/WebDevSimplified/JavaScript-Quiz-App
+
 //Variables
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
