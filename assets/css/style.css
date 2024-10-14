@@ -48,7 +48,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: #009edb;
+    background-color: white;
     height: 55vh;
     width: 25vw;
     margin-left: auto;
@@ -56,7 +56,7 @@ body {
     font-size: 150%;
     border-radius: 15%;
     padding: 0 10px;
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    /* box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36); */
 }
 
 .flag-container {

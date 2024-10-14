@@ -6,28 +6,36 @@ const nextButton = document.getElementById('next-button');
 const introElement = document.getElementById('intro-to-quiz');
 const flagContainer = document.getElementById('flag-container');
 const answerContainer = document.getElementById('answer-container');
+// const answerButtons = document.getElementsByClassName('ans-btn');
 const flagElement = document.getElementById('flag-image');
 const counterElement = document.getElementById('counter');
 
+let twice;
+// let once = {
+//     once: true,
+// };
 let shuffledFlags, currentFlagIndex;
 
 /**
  * Wait for the page to load, then add event listeners
  */
 document.addEventListener("DOMContentLoaded", function () {
+    console.log('top of DOMContentLoaded');
 
     startButton.addEventListener('click', startQuiz);
     nextButton.addEventListener('click', () => {
         currentFlagIndex++;
         nextFlag();
     });
+    console.log('bottom of DOMContentLoaded');
+
 });
 
 /**
  * Sets up the page to begin the quiz, shuffles the deck of countries data
  */
 function startQuiz() {
-
+    console.log('top of startQuiz');
     startButton.classList.add('hide');
     introElement.classList.add('hide');
     flagContainer.classList.remove('hide');
@@ -43,6 +51,7 @@ function startQuiz() {
     clearCounters();
     //Set the progress counter 
     counterElement.innerText = '1';
+    console.log('bottom of startQuiz');
 
 }
 
@@ -50,20 +59,27 @@ function startQuiz() {
  * Calls up next flag from the shuffled deck 
  */
 function nextFlag() {
+    console.log('top of nextFlag');
 
     resetQuiz();
     showFlag(shuffledFlags[currentFlagIndex]);
+    console.log('bottom of nextFlag');
+
 }
+
+
 
 /**
  * Populates the HTML with the flag image, creates the corresponding answer buttons
  */
 function showFlag(country) {
+    console.log('top of showFlag');
 
     let oldCounter = parseInt(counterElement.innerText);
     counterElement.innerText = ++oldCounter;
 
     flagElement.innerHTML = country.image;
+
     country.choices.forEach(choice => {
         const button = document.createElement('button');
         button.innerText = choice.text;
@@ -73,21 +89,63 @@ function showFlag(country) {
             button.dataset.correct = choice.correct;
         }
 
-        button.addEventListener('click', selectAnswer);
         answerContainer.appendChild(button);
+        // button.removeEventListener('click', selectAnswer);
     });
+
+    // button.addEventListener('click', selectAnswer, {
+    //     once: true
+    // });
+
+
+    // const wrapper = document.getElementById('answer-container');
+    answerContainer.addEventListener('click', selectAnswer);
+    // answerContainer.addEventListener('click', function (e) {
+    //     const isButton = e.target.nodeName === 'BUTTON';
+    //     if (isButton) {
+    //         selectAnswer(e);
+
+    //     }
+    // });
+    // handleAnswerButton();
+
+    // function handleAnswerButton(e) {
+    //     const isButton = e.target.nodeName === 'BUTTON';
+    //     if (isButton) {
+    //         // selectAnswer(e);
+    //         answerContainer.addEventListener('click', function () {
+    //                 selectAnswer(e);
+
+    //             },
+    //             once, );
+    //     }
+    // }
+    // once: true,
+
+
+
+
+
+    // console.log(selectAnswer.target.nodeName);
+    //})
+    console.log('bottom of showFlag');
+
 }
 
+
 /**
- * Removes the previous answer buttons and their data
+ * Hides the next button and removes the previous answer buttons and their data
  */
 function resetQuiz() {
+    console.log('top of resetQuiz');
 
     nextButton.classList.add('hide');
 
     while (answerContainer.firstChild) {
         answerContainer.removeChild(answerContainer.firstChild);
     }
+    console.log('bottom of resetQuiz');
+
 }
 
 /**
@@ -97,9 +155,23 @@ function resetQuiz() {
  * button is presented 
  */
 function selectAnswer(e) {
-
+    console.log('top of selectAnswer');
+    console.log(twice);
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
+
+    // e.target.removeEventListener('click', selectAnswer);
+
+
+    const isButton = selectedButton.nodeName === 'BUTTON';
+    if (!isButton) {
+        return;
+    }
+
+    answerContainer.removeEventListener('click', selectAnswer);
+
+    console.log(selectedButton.nodeName);
+
 
     if (correct) {
         incrementCorrect();
@@ -117,6 +189,11 @@ function selectAnswer(e) {
         startButton.innerText = 'Restart ->';
         startButton.classList.remove('hide');
     }
+
+    // once = false;
+
+    console.log('bottom of selectAnswer');
+
 }
 
 /**
@@ -125,6 +202,7 @@ function selectAnswer(e) {
  * causing their background colours to change
  */
 function setStatusClass(element, correct) {
+    console.log('top of setStatusClass');
 
     clearStatusClass(element);
     if (correct) {
@@ -132,23 +210,31 @@ function setStatusClass(element, correct) {
     } else {
         element.classList.add('incorrect');
     }
+    console.log('bottom of setStatusClass');
+
 }
 
 /**
  * Removes any previous designation 
  */
 function clearStatusClass(element) {
+    console.log('top of clearStatusClass');
 
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+    console.log('bottom of clearStatusClass');
+
 }
 
 /**
  * Resets the score counters to 0 
  */
 function clearCounters() {
+    console.log('top of clearCounters');
+
     document.getElementById("correct").innerText = '0';
     document.getElementById("incorrect").innerText = '0';
+    console.log('bottom of clearCounters');
 
 }
 
@@ -156,8 +242,11 @@ function clearCounters() {
  * Gets the correct score and increments it by 1
  */
 function incrementCorrect() {
+    console.log('top of incrementCorrect');
+
     let oldScore = parseInt(document.getElementById("correct").innerText);
     document.getElementById("correct").innerText = ++oldScore;
+    console.log('bottom of incrementCorrect');
 
 }
 
@@ -165,8 +254,12 @@ function incrementCorrect() {
  * Gets the incorrect score and increments it by 1
  */
 function incrementIncorrect() {
+    console.log('top of incrementIncorrect');
+
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
+    console.log('bottom of incrementIncorrect');
+
 }
 
 /**
