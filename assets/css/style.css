@@ -158,8 +158,7 @@ body {
 }
 
 /* --------- Media queries */
-
-@media (max-width: 280px) {
+@media screen and (min-width: 280px) {
     .heading {
         width: 100%;
         text-align: center;
@@ -170,7 +169,58 @@ body {
     }
 
     .intro-to-quiz {
-        font-size: 75%;
+        font-size: 100%;
+        width: 75vw;
+        height: 55vh;
+    }
+
+    .flag {
+        height: 50%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+    .intro-to-quiz {
+        font-size: 100%;
         width: 75vw;
         height: 55vh;
     }
@@ -189,11 +239,360 @@ body {
     }
 
     .flag {
-        height: 50%;
+        height: 55%;
     }
 
     .answer-button .btn {
         padding: 5px 10px;
         font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+    .intro-to-quiz {
+        font-size: 100%;
+        width: 75vw;
+        height: 55vh;
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+
+    .flag {
+        height: 60%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+    .intro-to-quiz {
+        font-size: 100%;
+        width: 75vw;
+        height: 55vh;
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+
+    .flag {
+        height: 65%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        height: 45px;
+        padding-right: 17.5px;
+
+    }
+
+    .intro-to-quiz {
+        font-size: 125%;
+        width: 75vw;
+        height: 55vh;
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+
+    .flag {
+        height: 75%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+    }
+
+    .logo {
+        height: 50px;
+        padding-right: 20px;
+
+    }
+
+    .intro-to-quiz {
+        font-size: 150%;
+        width: 75vw;
+        height: 55vh;
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+
+    .flag {
+        height: 100%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .logo {
+        height: 55px;
+        padding-right: 22.5px;
+
+    }
+
+    .intro-to-quiz {
+        font-size: 175%;
+        width: 75vw;
+        height: 55vh;
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+
+    .flag {
+        height: 125%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+    }
+
+    .logo {
+        height: 150px;
+        padding-right: 100px;
+
+    }
+
+    .intro-to-quiz {
+        font-size: 350%;
+        width: 75vw;
+        height: 55vh;
+    }
+
+    .counter-container {
+        font-size: .5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 10px;
+    }
+
+    .counter {
+        height: 20px;
+    }
+
+    .flag {
+        height: 200%;
+    }
+
+    .answer-button .btn {
+        padding: 5px 10px;
+        font-size: 100%;
+    }
+
+    #start-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+    }
+
+    #next-button {
+        padding: 2.5px 30px 1px;
+        font-size: 100%;
+        height: 50%;
+
     }
 }
