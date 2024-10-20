@@ -12,8 +12,7 @@ body {
     letter-spacing: 1.2px;
 }
 
-/* --------- Heading */
-
+/* --------- Heading --------- */
 .heading {
     text-align: center;
     font-size: 2.5rem;
@@ -34,7 +33,6 @@ body {
 }
 
 /* Quiz container */
-
 .quiz-container {
     box-sizing: border-box;
     width: 90vw;
@@ -165,7 +163,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .intro-to-quiz {
@@ -216,26 +214,19 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 40.5px;
+        padding-right: 15.5px;
+
     }
 
     .intro-to-quiz {
-        font-size: 100%;
+        font-size: 105%;
         width: 75vw;
         height: 55vh;
-    }
-
-    .counter-container {
-        font-size: .5rem;
-    }
-
-    .correct-counter,
-    .incorrect-counter {
-        height: 10px;
-    }
-
-    .counter {
-        height: 20px;
     }
 
     .flag {
@@ -243,21 +234,34 @@ body {
     }
 
     .answer-button .btn {
-        padding: 5px 10px;
-        font-size: 100%;
+        padding: 6px 11px;
+        font-size: 105%;
     }
 
     #start-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 6px 31px;
+        font-size: 105%;
         height: 50%;
     }
 
     #next-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 6px 31px;
+        font-size: 105%;
         height: 50%;
 
+    }
+
+    .counter-container {
+        font-size: .6rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 11px;
+    }
+
+    .counter {
+        height: 22px;
     }
 }
 
@@ -271,23 +275,16 @@ body {
         font-size: 1.25rem;
     }
 
+    .logo {
+        height: 41px;
+        padding-right: 16px;
+
+    }
+
     .intro-to-quiz {
-        font-size: 100%;
+        font-size: 110%;
         width: 75vw;
         height: 55vh;
-    }
-
-    .counter-container {
-        font-size: .5rem;
-    }
-
-    .correct-counter,
-    .incorrect-counter {
-        height: 10px;
-    }
-
-    .counter {
-        height: 20px;
     }
 
     .flag {
@@ -295,21 +292,34 @@ body {
     }
 
     .answer-button .btn {
-        padding: 5px 10px;
-        font-size: 100%;
+        padding: 7px 12px;
+        font-size: 110%;
     }
 
     #start-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 7px 32px;
+        font-size: 110%;
         height: 50%;
     }
 
     #next-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 7px 32px;
+        font-size: 110%;
         height: 50%;
 
+    }
+
+    .counter-container {
+        font-size: .7rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 12px;
+    }
+
+    .counter {
+        height: 24px;
     }
 }
 
@@ -323,23 +333,16 @@ body {
         font-size: 1.25rem;
     }
 
+    .logo {
+        height: 41.5px;
+        padding-right: 16.5px;
+
+    }
+
     .intro-to-quiz {
-        font-size: 100%;
+        font-size: 115%;
         width: 75vw;
         height: 55vh;
-    }
-
-    .counter-container {
-        font-size: .5rem;
-    }
-
-    .correct-counter,
-    .incorrect-counter {
-        height: 10px;
-    }
-
-    .counter {
-        height: 20px;
     }
 
     .flag {
@@ -347,21 +350,34 @@ body {
     }
 
     .answer-button .btn {
-        padding: 5px 10px;
-        font-size: 100%;
+        padding: 8px 13px;
+        font-size: 115%;
     }
 
     #start-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 8px 33px;
+        font-size: 115%;
         height: 50%;
     }
 
     #next-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 8px 33px;
+        font-size: 115%;
         height: 50%;
 
+    }
+
+    .counter-container {
+        font-size: .8rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 13px;
+    }
+
+    .counter {
+        height: 26px;
     }
 }
 
@@ -387,39 +403,43 @@ body {
         height: 55vh;
     }
 
-    .counter-container {
-        font-size: .5rem;
-    }
-
-    .correct-counter,
-    .incorrect-counter {
-        height: 10px;
-    }
-
-    .counter {
-        height: 20px;
-    }
-
     .flag {
         height: 75%;
     }
 
+    .btn {
+        border-radius: 16px;
+    }
+
     .answer-button .btn {
-        padding: 5px 10px;
-        font-size: 100%;
+        padding: 10px 15px;
+        font-size: 125%;
     }
 
     #start-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 10px 35px;
+        font-size: 125%;
         height: 50%;
     }
 
     #next-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 10px 35px;
+        font-size: 125%;
         height: 50%;
 
+    }
+
+    .counter-container {
+        font-size: 1rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 18px;
+    }
+
+    .counter {
+        height: 36px;
     }
 }
 
@@ -445,39 +465,43 @@ body {
         height: 55vh;
     }
 
-    .counter-container {
-        font-size: .5rem;
-    }
-
-    .correct-counter,
-    .incorrect-counter {
-        height: 10px;
-    }
-
-    .counter {
-        height: 20px;
-    }
-
     .flag {
         height: 100%;
     }
 
+    .btn {
+        border-radius: 17px;
+    }
+
     .answer-button .btn {
-        padding: 5px 10px;
-        font-size: 100%;
+        padding: 15px 20px;
+        font-size: 150%;
     }
 
     #start-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 15px 40px 40px;
+        font-size: 150%;
         height: 50%;
     }
 
     #next-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 15px 40px 40px;
+        font-size: 150%;
         height: 50%;
 
+    }
+
+    .counter-container {
+        font-size: 1.25rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 22px;
+    }
+
+    .counter {
+        height: 44px;
     }
 }
 
@@ -503,39 +527,43 @@ body {
         height: 55vh;
     }
 
-    .counter-container {
-        font-size: .5rem;
-    }
-
-    .correct-counter,
-    .incorrect-counter {
-        height: 10px;
-    }
-
-    .counter {
-        height: 20px;
-    }
-
     .flag {
         height: 125%;
     }
 
+    .btn {
+        border-radius: 18px;
+    }
+
     .answer-button .btn {
-        padding: 5px 10px;
-        font-size: 100%;
+        padding: 20px 25px;
+        font-size: 175%;
     }
 
     #start-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 20px 50px 50px;
+        font-size: 175%;
         height: 50%;
     }
 
     #next-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 20px 50px 50px;
+        font-size: 175%;
         height: 50%;
 
+    }
+
+    .counter-container {
+        font-size: 1.5rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 27px;
+    }
+
+    .counter {
+        height: 54px;
     }
 }
 
@@ -551,7 +579,7 @@ body {
 
     .logo {
         height: 150px;
-        padding-right: 100px;
+        padding-right: 75px;
 
     }
 
@@ -561,38 +589,42 @@ body {
         height: 55vh;
     }
 
-    .counter-container {
-        font-size: .5rem;
-    }
-
-    .correct-counter,
-    .incorrect-counter {
-        height: 10px;
-    }
-
-    .counter {
-        height: 20px;
-    }
-
     .flag {
         height: 200%;
     }
 
+    .btn {
+        border-radius: 20px;
+    }
+
     .answer-button .btn {
-        padding: 5px 10px;
-        font-size: 100%;
+        padding: 25px 50px;
+        font-size: 350%;
     }
 
     #start-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 35px 100px 100px;
+        font-size: 350%;
         height: 50%;
     }
 
     #next-button {
-        padding: 2.5px 30px 1px;
-        font-size: 100%;
+        padding: 35px 100px 100px;
+        font-size: 350%;
         height: 50%;
 
+    }
+
+    .counter-container {
+        font-size: 3rem;
+    }
+
+    .correct-counter,
+    .incorrect-counter {
+        height: 52px;
+    }
+
+    .counter {
+        height: 104px;
     }
 }
