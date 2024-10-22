@@ -377,7 +377,7 @@ const flagDeck = [{
                 correct: false
             },
             {
-                text: 'Liechtenstein',
+                text: 'Peru',
                 correct: false
             },
             {

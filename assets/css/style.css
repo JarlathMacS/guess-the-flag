@@ -101,6 +101,7 @@ body {
     display: flex;
     justify-content: space-around;
     font-size: 150%;
+    padding-top: 10px;
 }
 
 .btn {
@@ -136,7 +137,7 @@ body {
     color: green;
     height: 25px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 0 10px 20px;
 }
 
 .incorrect-counter {
@@ -144,14 +145,14 @@ body {
     color: red;
     height: 25px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 0 10px 20px;
 }
 
 .counter {
     background-color: white;
     height: 50px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 0 10px 20px;
     text-align: center;
 }
 
@@ -163,16 +164,16 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: .75rem;
+        font-size: .8rem;
     }
 
     .logo {
-        height: 20px;
-        padding-right: 7.5px;
+        height: 25px;
+        padding-right: 5px;
 
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 75%;
         width: 75vw;
         height: 55vh;
@@ -180,6 +181,10 @@ body {
 
     .flag {
         height: 35%;
+    }
+
+    #answer-container {
+        flex-direction: column;
     }
 
     .btn {
@@ -205,7 +210,10 @@ body {
     }
 
     .counter-container {
-        font-size: .3rem;
+        font-size: .5rem;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1px;
     }
 
     .correct-counter,
@@ -213,11 +221,13 @@ body {
         height: 5.5px;
         text-align: center;
         border-radius: 7.5px;
+        padding: 5px 10px 25px;
     }
 
     .counter {
         height: 11px;
         border-radius: 7.5px;
+        padding: 2.5px 10px 25px;
     }
 }
 
@@ -265,10 +275,12 @@ body {
     .correct-counter,
     .incorrect-counter {
         height: 10px;
+        padding: 7.5px 10px 25px;
     }
 
     .counter {
         height: 20px;
+        padding: 5px 10px 25px;
     }
 }
 
