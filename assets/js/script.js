@@ -413,7 +413,7 @@ const flagDeck = [{
         </div>
         `,
         choices: [{
-                text: 'Armenia',
+                text: 'Argentina',
                 correct: true
             },
             {
