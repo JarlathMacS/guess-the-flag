@@ -409,7 +409,7 @@ const flagDeck = [{
     {
         image: `
         <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/am.jpg" alt="country flag">
+        <img id="flag" class="flag" src="assets/images/flags/ar.jpg" alt="country flag">
         </div>
         `,
         choices: [{

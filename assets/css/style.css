@@ -238,17 +238,30 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
-    .intro-to-quiz {
+    .logo {
+        height: 40px;
+        padding-right: 10px;
+    }
+
+    #intro-to-quiz {
         font-size: 100%;
         width: 75vw;
         height: 55vh;
     }
 
     .flag {
-        height: 50%;
+        height: 60%;
+    }
+
+    #answer-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        border-radius: 7.5px;
     }
 
     .answer-button .btn {
@@ -269,18 +282,24 @@ body {
     }
 
     .counter-container {
-        font-size: .5rem;
+        font-size: .6rem;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2px;
     }
 
     .correct-counter,
     .incorrect-counter {
-        height: 10px;
-        padding: 7.5px 10px 25px;
+        height: 11px;
+        padding: 2.5px 10px 20px;
+        text-align: center;
+        border-radius: 7.5px;
     }
 
     .counter {
-        height: 20px;
-        padding: 5px 10px 25px;
+        height: 11px;
+        padding: 2.5px 10px 30px;
+        border-radius: 7.5px;
     }
 }
 
@@ -291,23 +310,30 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 
     .logo {
-        height: 40.5px;
-        padding-right: 15.5px;
-
+        height: 45px;
+        padding-right: 15px;
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 105%;
         width: 75vw;
         height: 55vh;
     }
 
     .flag {
-        height: 55%;
+        height: 65%;
+    }
+
+    #answer-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        border-radius: 7.5px;
     }
 
     .answer-button .btn {
@@ -325,20 +351,27 @@ body {
         padding: 6px 31px;
         font-size: 105%;
         height: 50%;
-
     }
 
     .counter-container {
-        font-size: .6rem;
+        font-size: .65rem;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3px;
     }
 
     .correct-counter,
     .incorrect-counter {
-        height: 11px;
+        height: 12px;
+        padding: .5px 10px 20px;
+        text-align: center;
+        border-radius: 7.5px;
     }
 
     .counter {
         height: 22px;
+        padding: 2.5px 10px 25px;
+        border-radius: 7.5px;
     }
 }
 
@@ -349,23 +382,30 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+        font-size: 1.7rem;
     }
 
     .logo {
-        height: 41px;
+        height: 50px;
         padding-right: 16px;
-
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 110%;
         width: 75vw;
         height: 55vh;
     }
 
     .flag {
-        height: 60%;
+        height: 70%;
+    }
+
+    #answer-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        border-radius: 7.5px;
     }
 
     .answer-button .btn {
@@ -388,15 +428,23 @@ body {
 
     .counter-container {
         font-size: .7rem;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3px;
     }
 
     .correct-counter,
     .incorrect-counter {
         height: 12px;
+        padding: .5px 10px 20px;
+        text-align: center;
+        border-radius: 7.5px;
     }
 
     .counter {
         height: 24px;
+        padding: 2.5px 10px 25px;
+        border-radius: 7.5px;
     }
 }
 
@@ -416,7 +464,7 @@ body {
 
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 115%;
         width: 75vw;
         height: 55vh;
@@ -474,7 +522,7 @@ body {
 
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 125%;
         width: 75vw;
         height: 55vh;
@@ -536,7 +584,7 @@ body {
 
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 150%;
         width: 75vw;
         height: 55vh;
@@ -598,7 +646,7 @@ body {
 
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 175%;
         width: 75vw;
         height: 55vh;
@@ -660,7 +708,7 @@ body {
 
     }
 
-    .intro-to-quiz {
+    #intro-to-quiz {
         font-size: 350%;
         width: 75vw;
         height: 55vh;
