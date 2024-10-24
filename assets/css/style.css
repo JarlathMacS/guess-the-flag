@@ -455,12 +455,12 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+        font-size: 1.8rem;
     }
 
     .logo {
-        height: 41.5px;
-        padding-right: 16.5px;
+        height: 55px;
+        padding-right: 18px;
 
     }
 
@@ -471,7 +471,15 @@ body {
     }
 
     .flag {
-        height: 65%;
+        height: 75%;
+    }
+
+    #answer-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        border-radius: 7.5px;
     }
 
     .answer-button .btn {
@@ -482,27 +490,34 @@ body {
     #start-button {
         padding: 8px 33px;
         font-size: 115%;
-        height: 50%;
+        height: 55%;
     }
 
     #next-button {
         padding: 8px 33px;
         font-size: 115%;
-        height: 50%;
-
+        height: 55%;
     }
 
     .counter-container {
         font-size: .8rem;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1px;
     }
 
     .correct-counter,
     .incorrect-counter {
-        height: 13px;
+        height: 10px;
+        padding: .5px 10px 30px;
+        text-align: center;
+        border-radius: 7.5px;
     }
 
     .counter {
-        height: 26px;
+        height: 10px;
+        padding: 0px 10px 45px;
+        border-radius: 7.5px;
     }
 }
 
