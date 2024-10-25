@@ -461,7 +461,6 @@ body {
     .logo {
         height: 55px;
         padding-right: 18px;
-
     }
 
     #intro-to-quiz {
@@ -528,27 +527,30 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .logo {
-        height: 45px;
-        padding-right: 17.5px;
-
+        height: 65px;
+        padding-right: 20px;
     }
 
     #intro-to-quiz {
-        font-size: 125%;
+        font-size: 145%;
         width: 75vw;
         height: 55vh;
     }
 
     .flag {
-        height: 75%;
+        height: 100%;
+    }
+
+    #answer-container {
+        flex-direction: row;
     }
 
     .btn {
-        border-radius: 16px;
+        border-radius: 7.5px;
     }
 
     .answer-button .btn {
@@ -559,27 +561,34 @@ body {
     #start-button {
         padding: 10px 35px;
         font-size: 125%;
-        height: 50%;
+        height: 60%;
     }
 
     #next-button {
         padding: 10px 35px;
         font-size: 125%;
-        height: 50%;
-
+        height: 60%;
     }
 
     .counter-container {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1px;
     }
 
     .correct-counter,
     .incorrect-counter {
-        height: 18px;
+        height: 22px;
+        padding: 0px 10px 30px;
+        text-align: center;
+        border-radius: 7.5px;
     }
 
     .counter {
-        height: 36px;
+        height: 32px;
+        padding: 0px 10px 45px;
+        border-radius: 7.5px;
     }
 }
 
