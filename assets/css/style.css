@@ -599,27 +599,30 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
 
     .logo {
-        height: 50px;
-        padding-right: 20px;
-
+        height: 70px;
+        padding-right: 22px;
     }
 
     #intro-to-quiz {
-        font-size: 150%;
+        font-size: 165%;
         width: 75vw;
         height: 55vh;
     }
 
     .flag {
-        height: 100%;
+        height: 105%;
+    }
+
+    #answer-container {
+        flex-direction: row;
     }
 
     .btn {
-        border-radius: 17px;
+        border-radius: 7.5px;
     }
 
     .answer-button .btn {
@@ -637,20 +640,27 @@ body {
         padding: 15px 40px 40px;
         font-size: 150%;
         height: 50%;
-
     }
 
     .counter-container {
         font-size: 1.25rem;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1px;
     }
 
     .correct-counter,
     .incorrect-counter {
-        height: 22px;
+        height: 28px;
+        padding: 0px 10px 30px;
+        text-align: center;
+        border-radius: 7.5px;
     }
 
     .counter {
         height: 44px;
+        padding: 0px 10px 45px;
+        border-radius: 7.5px;
     }
 }
 
