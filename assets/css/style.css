@@ -749,7 +749,6 @@ body {
     .logo {
         height: 150px;
         padding-right: 75px;
-
     }
 
     #intro-to-quiz {
@@ -759,7 +758,11 @@ body {
     }
 
     .flag {
-        height: 200%;
+        height: 175%;
+    }
+
+    #answer-container {
+        flex-direction: row;
     }
 
     .btn {
@@ -781,19 +784,26 @@ body {
         padding: 35px 100px 100px;
         font-size: 350%;
         height: 50%;
-
     }
 
     .counter-container {
         font-size: 3rem;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1px;
     }
 
     .correct-counter,
     .incorrect-counter {
-        height: 52px;
+        height: 110px;
+        padding: 0px 10px 30px;
+        text-align: center;
+        border-radius: 7.5px;
     }
 
     .counter {
-        height: 104px;
+        height: 165px;
+        padding: 0px 10px 45px;
+        border-radius: 7.5px;
     }
 }
