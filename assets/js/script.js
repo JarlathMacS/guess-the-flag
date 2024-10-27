@@ -5,8 +5,9 @@ const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const introElement = document.getElementById('intro-to-quiz');
 const flagContainer = document.getElementById('flag-container');
+const flagImage = document.getElementById('flag-image');
+const imgElement = document.createElement('img');
 const answerContainer = document.getElementById('answer-container');
-const flagElement = document.getElementById('flag-image');
 const counterElement = document.getElementById('counter');
 const correctCounterElement = document.getElementById('correct');
 const incorrectCounterElement = document.getElementById('incorrect');
@@ -38,11 +39,23 @@ function startQuiz() {
     //Start with the first flag in the shuffled deck
     currentFlagIndex = 0;
 
+    // renderFlag();
+
     nextFlag();
     //Removes the previous quiz score
     clearCounters();
     //Set the progress counter 
     counterElement.innerText = '1';
+}
+
+function renderFlag() {
+    // Initialize the image source
+    imgElement.setAttribute('src', 'assets/images/flags/un.jpg');
+    imgElement.id = 'flag';
+    imgElement.className = 'flag';
+    imgElement.alt = 'Display of flags';
+    // Add image to DOM
+    flagImage.appendChild(imgElement);
 }
 
 /**
@@ -60,8 +73,12 @@ function showFlag(country) {
     let oldCounter = parseInt(counterElement.innerText);
     counterElement.innerText = ++oldCounter;
 
+    // Add image to DOM
+    flagImage.appendChild(imgElement);
+
     // Set image source dynamically
-    flagElement.src = country.image;
+    imgElement.setAttribute('src', country.image);
+    imgElement.alt = 'A country\'s flag';
 
     country.choices.forEach(choice => {
         const button = document.createElement('button');
@@ -82,6 +99,16 @@ function showFlag(country) {
  * Hides the next button and removes the previous answer buttons and their data
  */
 function resetQuiz() {
+    // Initialize the image source
+    imgElement.setAttribute('src', 'assets/images/flags/un.jpg');
+    imgElement.id = 'flag';
+    imgElement.classList.add('flag');
+    imgElement.alt = 'Display of flags';
+
+    if (flagImage.hasChildNodes) {
+        // flagImage.removeChild(imgElement);
+    }
+
     nextButton.classList.add('hide');
 
     while (answerContainer.firstChild) {
