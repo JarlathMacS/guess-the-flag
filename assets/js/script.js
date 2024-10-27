@@ -6,36 +6,28 @@ const nextButton = document.getElementById('next-button');
 const introElement = document.getElementById('intro-to-quiz');
 const flagContainer = document.getElementById('flag-container');
 const answerContainer = document.getElementById('answer-container');
-// const answerButtons = document.getElementsByClassName('ans-btn');
 const flagElement = document.getElementById('flag-image');
 const counterElement = document.getElementById('counter');
+const correctCounterElement = document.getElementById('correct');
+const incorrectCounterElement = document.getElementById('incorrect');
 
-let twice;
-// let once = {
-//     once: true,
-// };
 let shuffledFlags, currentFlagIndex;
 
 /**
  * Wait for the page to load, then add event listeners
  */
 document.addEventListener("DOMContentLoaded", function () {
-    console.log('top of DOMContentLoaded');
-
     startButton.addEventListener('click', startQuiz);
     nextButton.addEventListener('click', () => {
         currentFlagIndex++;
         nextFlag();
     });
-    console.log('bottom of DOMContentLoaded');
-
 });
 
 /**
  * Sets up the page to begin the quiz, shuffles the deck of countries data
  */
 function startQuiz() {
-    console.log('top of startQuiz');
     startButton.classList.add('hide');
     introElement.classList.add('hide');
     flagContainer.classList.remove('hide');
@@ -51,34 +43,25 @@ function startQuiz() {
     clearCounters();
     //Set the progress counter 
     counterElement.innerText = '1';
-    console.log('bottom of startQuiz');
-
 }
 
 /**
  * Calls up next flag from the shuffled deck 
  */
 function nextFlag() {
-    console.log('top of nextFlag');
-
     resetQuiz();
     showFlag(shuffledFlags[currentFlagIndex]);
-    console.log('bottom of nextFlag');
-
 }
-
-
 
 /**
  * Populates the HTML with the flag image, creates the corresponding answer buttons
  */
 function showFlag(country) {
-    console.log('top of showFlag');
-
     let oldCounter = parseInt(counterElement.innerText);
     counterElement.innerText = ++oldCounter;
 
-    flagElement.innerHTML = country.image;
+    // Set image source dynamically
+    flagElement.src = country.image;
 
     country.choices.forEach(choice => {
         const button = document.createElement('button');
@@ -90,62 +73,20 @@ function showFlag(country) {
         }
 
         answerContainer.appendChild(button);
-        // button.removeEventListener('click', selectAnswer);
     });
 
-    // button.addEventListener('click', selectAnswer, {
-    //     once: true
-    // });
-
-
-    // const wrapper = document.getElementById('answer-container');
     answerContainer.addEventListener('click', selectAnswer);
-    // answerContainer.addEventListener('click', function (e) {
-    //     const isButton = e.target.nodeName === 'BUTTON';
-    //     if (isButton) {
-    //         selectAnswer(e);
-
-    //     }
-    // });
-    // handleAnswerButton();
-
-    // function handleAnswerButton(e) {
-    //     const isButton = e.target.nodeName === 'BUTTON';
-    //     if (isButton) {
-    //         // selectAnswer(e);
-    //         answerContainer.addEventListener('click', function () {
-    //                 selectAnswer(e);
-
-    //             },
-    //             once, );
-    //     }
-    // }
-    // once: true,
-
-
-
-
-
-    // console.log(selectAnswer.target.nodeName);
-    //})
-    console.log('bottom of showFlag');
-
 }
-
 
 /**
  * Hides the next button and removes the previous answer buttons and their data
  */
 function resetQuiz() {
-    console.log('top of resetQuiz');
-
     nextButton.classList.add('hide');
 
     while (answerContainer.firstChild) {
         answerContainer.removeChild(answerContainer.firstChild);
     }
-    console.log('bottom of resetQuiz');
-
 }
 
 /**
@@ -155,23 +96,16 @@ function resetQuiz() {
  * button is presented 
  */
 function selectAnswer(e) {
-    console.log('top of selectAnswer');
-    console.log(twice);
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-
-    // e.target.removeEventListener('click', selectAnswer);
-
-
     const isButton = selectedButton.nodeName === 'BUTTON';
+
+    // Prevent non-button clicks
     if (!isButton) {
         return;
     }
-
+    // Prevent multiple clicks
     answerContainer.removeEventListener('click', selectAnswer);
-
-    console.log(selectedButton.nodeName);
-
 
     if (correct) {
         incrementCorrect();
@@ -189,11 +123,6 @@ function selectAnswer(e) {
         startButton.innerText = 'Restart ->';
         startButton.classList.remove('hide');
     }
-
-    // once = false;
-
-    console.log('bottom of selectAnswer');
-
 }
 
 /**
@@ -202,64 +131,45 @@ function selectAnswer(e) {
  * causing their background colours to change
  */
 function setStatusClass(element, correct) {
-    console.log('top of setStatusClass');
-
     clearStatusClass(element);
+
     if (correct) {
         element.classList.add('correct');
     } else {
         element.classList.add('incorrect');
     }
-    console.log('bottom of setStatusClass');
-
 }
 
 /**
  * Removes any previous designation 
  */
 function clearStatusClass(element) {
-    console.log('top of clearStatusClass');
-
     element.classList.remove('correct');
     element.classList.remove('incorrect');
-    console.log('bottom of clearStatusClass');
-
 }
 
 /**
  * Resets the score counters to 0 
  */
 function clearCounters() {
-    console.log('top of clearCounters');
-
-    document.getElementById("correct").innerText = '0';
-    document.getElementById("incorrect").innerText = '0';
-    console.log('bottom of clearCounters');
-
+    correctCounterElement.innerText = '0';
+    incorrectCounterElement.innerText = '0';
 }
 
 /**
  * Gets the correct score and increments it by 1
  */
 function incrementCorrect() {
-    console.log('top of incrementCorrect');
-
-    let oldScore = parseInt(document.getElementById("correct").innerText);
-    document.getElementById("correct").innerText = ++oldScore;
-    console.log('bottom of incrementCorrect');
-
+    let oldScore = parseInt(correctCounterElement.innerText);
+    correctCounterElement.innerText = ++oldScore;
 }
 
 /**
  * Gets the incorrect score and increments it by 1
  */
 function incrementIncorrect() {
-    console.log('top of incrementIncorrect');
-
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
-    console.log('bottom of incrementIncorrect');
-
+    let oldScore = parseInt(incorrectCounterElement.innerText);
+    incorrectCounterElement.innerText = ++oldScore;
 }
 
 /**
@@ -267,11 +177,7 @@ function incrementIncorrect() {
  */
 const flagDeck = [{
 
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/pl.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/pl.jpg`,
         choices: [{
                 text: 'United Kingdom',
                 correct: false
@@ -287,11 +193,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/dj.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/dj.jpg`,
         choices: [{
                 text: 'Azerbaijan',
                 correct: false
@@ -307,11 +209,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/aw.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/aw.jpg`,
         choices: [{
                 text: 'Cape Verde',
                 correct: false
@@ -327,11 +225,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/gh.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/gh.jpg`,
         choices: [{
                 text: 'Ghana',
                 correct: true
@@ -347,11 +241,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/mz.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/mz.jpg`,
         choices: [{
                 text: 'Mozambique',
                 correct: true
@@ -367,11 +257,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/pm.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/pm.jpg`,
         choices: [{
                 text: 'Wallis and Futuna',
                 correct: false
@@ -387,11 +273,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/bl.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/bl.jpg`,
         choices: [{
                 text: 'South Georgia',
                 correct: false
@@ -407,11 +289,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/ar.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/ar.jpg`,
         choices: [{
                 text: 'Argentina',
                 correct: true
@@ -427,11 +305,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/zm.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/zm.jpg`,
         choices: [{
                 text: 'Togo',
                 correct: false
@@ -447,11 +321,7 @@ const flagDeck = [{
         ]
     },
     {
-        image: `
-        <div id="flag-image">
-        <img id="flag" class="flag" src="assets/images/flags/rw.jpg" alt="country flag">
-        </div>
-        `,
+        image: `assets/images/flags/rw.jpg`,
         choices: [{
                 text: 'Macau',
                 correct: false
