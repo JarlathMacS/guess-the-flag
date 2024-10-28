@@ -39,23 +39,11 @@ function startQuiz() {
     //Start with the first flag in the shuffled deck
     currentFlagIndex = 0;
 
-    // renderFlag();
-
     nextFlag();
     //Removes the previous quiz score
     clearCounters();
     //Set the progress counter 
     counterElement.innerText = '1';
-}
-
-function renderFlag() {
-    // Initialize the image source
-    imgElement.setAttribute('src', 'assets/images/flags/un.jpg');
-    imgElement.id = 'flag';
-    imgElement.className = 'flag';
-    imgElement.alt = 'Display of flags';
-    // Add image to DOM
-    flagImage.appendChild(imgElement);
 }
 
 /**
@@ -73,12 +61,11 @@ function showFlag(country) {
     let oldCounter = parseInt(counterElement.innerText);
     counterElement.innerText = ++oldCounter;
 
+    // Set image source dynamically
+    imgElement.src = country.image;
+    imgElement.alt = 'A country\'s flag';
     // Add image to DOM
     flagImage.appendChild(imgElement);
-
-    // Set image source dynamically
-    imgElement.setAttribute('src', country.image);
-    imgElement.alt = 'A country\'s flag';
 
     country.choices.forEach(choice => {
         const button = document.createElement('button');
@@ -88,10 +75,8 @@ function showFlag(country) {
         if (choice.correct) {
             button.dataset.correct = choice.correct;
         }
-
         answerContainer.appendChild(button);
     });
-
     answerContainer.addEventListener('click', selectAnswer);
 }
 
@@ -99,21 +84,20 @@ function showFlag(country) {
  * Hides the next button and removes the previous answer buttons and their data
  */
 function resetQuiz() {
-    // Initialize the image source
-    imgElement.setAttribute('src', 'assets/images/flags/un.jpg');
-    imgElement.id = 'flag';
-    imgElement.classList.add('flag');
-    imgElement.alt = 'Display of flags';
-
-    if (flagImage.hasChildNodes) {
-        // flagImage.removeChild(imgElement);
-    }
-
+    renderFlag();
     nextButton.classList.add('hide');
 
     while (answerContainer.firstChild) {
         answerContainer.removeChild(answerContainer.firstChild);
     }
+}
+
+function renderFlag() {
+    // Initialize the image source
+    imgElement.src = 'assets/images/flags/un.jpg';
+    imgElement.alt = 'Display of flags';
+    imgElement.id = 'flag';
+    imgElement.classList.add('flag');
 }
 
 /**
