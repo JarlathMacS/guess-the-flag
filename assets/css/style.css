@@ -57,7 +57,7 @@ main {
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    margin-top: 85px;
+    margin-top: 72px;
 }
 
 /* Quiz container */
@@ -73,21 +73,21 @@ main {
     align-items: center; */
     text-align: center;
     /* justify-content: center; */
-    background-color: white;
+    background-color: #ffffff;
     width: 75vw;
-    height: 55vh;
+    /* height: 55vh; */
     font-size: 125%;
     margin-left: auto;
     margin-right: auto;
     /* border-radius: 15%; */
-    padding: 0 10px;
+    padding: 20px;
 }
 
 .flag-container {
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    height: 35vh;
+    /* height: 35vh; */
     margin-bottom: 15px;
 }
 
@@ -100,36 +100,53 @@ main {
 
 .flag {
     height: 60%;
-    border-radius: 0.5em;
+    border-radius: 10px;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+}
+
+#answer-wrapper {
+    /* height: 30vh; */
+    /* padding-bottom: 10px; */
+    margin-bottom: 20px;
 }
 
 .answer-container {
     display: flex;
-    width: 90vw;
-    height: 15vh;
+    flex-direction: column;
+    /* width: 90vw; */
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.control-wrapper {
+    /* height: 10vh; */
+    margin-bottom: 15px;
 }
 
 .control-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
 }
 
 .btn {
     background-color: #009edb;
     color: black;
-    padding: 30px 60px;
-    font-size: 150%;
+    padding: 30px;
+    font-size: 100%;
     font-weight: bold;
     border: 1px transparent;
-    border-radius: 15px;
+    border-radius: 10px;
     text-transform: uppercase;
+    font-family: "Forum", serif;
+    margin-bottom: 5px;
+}
+
+.start-btn.hide .next-btn.hide {
+    .control-wrapper {
+        margin-bottom: 50px;
+    }
+
 }
 
 .btn:hover {
@@ -155,13 +172,14 @@ footer {
 
 .counter-container {
     width: 100vw;
-    height: 15vh;
+    /* height: 15vh; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+    margin-bottom: 65px;
     display: flex;
     justify-content: space-around;
-    font-size: 150%;
+    font-size: 100%;
     padding-top: 10px;
 }
 
@@ -169,7 +187,7 @@ footer {
     background-color: white;
     color: green;
     height: 25px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0 10px 20px;
 }
 
@@ -177,14 +195,14 @@ footer {
     background-color: white;
     color: red;
     height: 25px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0 10px 20px;
 }
 
 .counter {
     background-color: white;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0 10px 20px;
     text-align: center;
 }

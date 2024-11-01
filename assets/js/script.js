@@ -7,6 +7,7 @@ const introElement = document.getElementById('intro-to-quiz');
 const flagContainer = document.getElementById('flag-container');
 const flagImage = document.getElementById('flag-image');
 const imgElement = document.createElement('img');
+const answerWrapper = document.getElementById('answer-wrapper');
 const answerContainer = document.getElementById('answer-container');
 const counterElement = document.getElementById('counter');
 const correctCounterElement = document.getElementById('correct');
@@ -32,6 +33,7 @@ function startQuiz() {
     startButton.classList.add('hide');
     introElement.classList.add('hide');
     flagContainer.classList.remove('hide');
+    answerWrapper.classList.remove('hide');
     answerContainer.classList.remove('hide');
 
     // Math.random generates random numbers
