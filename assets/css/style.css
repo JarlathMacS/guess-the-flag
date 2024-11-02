@@ -42,8 +42,8 @@ header {
     z-index: 99;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.36);
 }
 
@@ -101,6 +101,7 @@ main {
 
 .flag {
     height: 60%;
+    max-height: 240px;
     border-radius: 10px;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
 }
