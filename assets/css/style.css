@@ -76,20 +76,21 @@ main {
     background-color: #ffffff;
     width: 75vw;
     /* height: 55vh; */
-    font-size: 125%;
+    font-size: 120%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 8px;
     /* border-radius: 15%; */
-    padding: 20px;
+    padding: 19px;
 }
 
-.flag-container {
-    /* display: flex;
+/* .flag-container {
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    /* height: 35vh; */
+    align-items: center;
+    height: 35vh;
     margin-bottom: 15px;
-}
+} */
 
 #flag-image {
     height: 240px;
@@ -107,7 +108,7 @@ main {
 #answer-wrapper {
     /* height: 30vh; */
     /* padding-bottom: 10px; */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .answer-container {
@@ -120,7 +121,7 @@ main {
 
 .control-wrapper {
     /* height: 10vh; */
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .control-container {
@@ -144,7 +145,7 @@ main {
 
 .start-btn.hide .next-btn.hide {
     .control-wrapper {
-        margin-bottom: 50px;
+        margin-bottom: 102px;
     }
 
 }
