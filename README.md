@@ -1,12 +1,13 @@
-![Guess the Flag heading](documentation/guess_the_flag_heading.png)
+![Guess the Flag header](documentation/guess_the_flag_header.png)
 
 ---
 
 # *Guess the Flag!*
 
-The quiz is an interactive way to learn about the different countries of the world, through identifying their flags.
+This quiz is an interactive way for visitors to learn about the different countries of the world, by identifying their flags.
+For those who are interested in global affairs or geography, it is a great learning aide, as the flags are presented at random.  It gives immediate feedback based on the visitors' answers.  It suggests a challenge to them to improve their score, which is recorded as correct/incorrect.
 
-The site can be accessed by this [link](https://iuliiakonovalova.github.io/animal_shelter/)
+The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-flag)
 
 ![Responsive Mockup](documentation/responsive_mockup.png)
 
