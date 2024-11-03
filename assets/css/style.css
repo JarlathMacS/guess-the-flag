@@ -17,6 +17,19 @@ body {
     font-family: "Forum", serif;
 }
 
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.36);
+}
+
 /* --------- Heading --------- */
 h1 {
     text-transform: uppercase;
@@ -32,19 +45,6 @@ h1 {
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
     width: 100%;
     margin-top: 0; */
-}
-
-/* Header */
-header {
-    background-color: #ffffff;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.36);
 }
 
 .logo {
@@ -144,12 +144,12 @@ main {
     margin-bottom: 5px;
 }
 
-.start-btn.hide .next-btn.hide {
+/* .start-btn.hide .next-btn.hide {
     .control-wrapper {
         margin-bottom: 102px;
     }
 
-}
+} */
 
 .btn:hover {
     background-color: black;
@@ -170,6 +170,7 @@ main {
 
 footer {
     background-color: #009edb;
+    width: 100%;
 }
 
 .counter-container {
@@ -381,6 +382,7 @@ footer {
     .flag {
         height: 200%;
         max-height: 480px;
+        border-radius: 25px;
     }
 
     #answer-wrapper {
@@ -399,18 +401,22 @@ footer {
 
     .correct-counter {
         padding: 0 10px 100px;
+        border-radius: 25px;
     }
 
     .incorrect-counter {
         padding: 0 10px 100px;
+        border-radius: 25px;
     }
 
     .counter {
         padding: 0 10px 105px;
+        border-radius: 25px;
     }
 
     .btn {
         font-size: 325%;
         padding: 60px;
+        border-radius: 25px;
     }
 }
