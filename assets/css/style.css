@@ -301,11 +301,11 @@ footer {
     #intro-to-quiz {
         font-size: 225%;
         padding-top: 100px;
-        margin-bottom: 298px;
+        margin-bottom: 62px;
     }
 
     .flag-container {
-        margin-top: 105px;
+        margin-top: 50px;
     }
 
     .flag {
@@ -313,12 +313,17 @@ footer {
     }
 
     #answer-wrapper {
-        margin-top: 110px;
-        margin-bottom: 146.5px;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .control-wrapper {
+        margin-bottom: 41px;
     }
 
     .counter-container {
         font-size: 175%;
+        margin-bottom: 50px;
     }
 
     .correct-counter {
@@ -365,12 +370,12 @@ footer {
 
     #intro-to-quiz {
         font-size: 400%;
-        padding-top: 300px;
-        margin-bottom: 487px;
+        padding-top: 200px;
+        margin-bottom: 232px;
     }
 
     .flag-container {
-        margin-top: 300px;
+        margin-top: 210px;
     }
 
     .flag {
@@ -379,16 +384,17 @@ footer {
     }
 
     #answer-wrapper {
-        margin-top: 400px;
-        margin-bottom: 180px;
+        margin-top: 225px;
+        margin-bottom: 90px;
     }
 
     .control-wrapper {
-        margin-bottom: 182px;
+        margin-bottom: 101px;
     }
 
     .counter-container {
         font-size: 300%;
+        margin-bottom: 90px;
     }
 
     .correct-counter {
@@ -405,6 +411,6 @@ footer {
 
     .btn {
         font-size: 325%;
-            padding: 60px;
+        padding: 60px;
     }
 }
