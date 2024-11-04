@@ -22,25 +22,28 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 ![Header](documentation/guess_the_flag_header.png)
 
-- __Introduction to the quiz__
+- __Landing page__
 
-  - Here we have an attractive background image, overlaid with the name of the organization, along with the suggested action words a user might take.
+  - Here the visitors are introduced to the quiz.  It is described in short, as well as the purpose presented.  The challenge to achieve a best score motivates the visitors to go through the quiz multiple times.
   
-![Hero image](media/dublin_pug_rescue_hero.png)
+![Landing](documentation/guess_the_flag_landing_intro_text.png)
 
-- __Why get a dog? section__
+- __Start button__
 
-  - Multiple possible motivations for, and benefits of, owning a dog are presented, both physical and mental. 
-  - Users are encouraged to consider getting any dog first and foremost for all the benefits presented. 
+  - They are presented with a start button in order to initiate the first quiz round. 
 
-![Why get a dog image](media/dublin_pug_rescue_why_dog.png)
+![Start button](documentation/guess_the_flag_landing_start_button.png)
 
-- __Why adopt a dog? section__
+- __Presentation of the flag challenges__
 
-  - This section presents the advantages of choosing to adopt a dog, focusing more on the mental and emotional benefits here.
-  - Users are presented with 5 strong reasons for adoption when looking for a dog. 
+  - This is where the flags are presented in random order.
+  - In addition, visitors are presented with 3 possible answers to choose from.
 
-![Why adopt image](media/dublin_pug_rescue_why_adopt.png)
+![Flag with 3 answer choices](documentation/guess_the_flag_question.png)
+
+  - As the cursor is moved over any 1 of the 3 choices, the background changes from a light (UN) blue to black, and the text from black to white.
+  
+![3 answer choices](documentation/guess_the_flag_question_highlighted.png)
 
 - __The footer__ 
 
