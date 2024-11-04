@@ -1,42 +1,28 @@
-![Guess the Flag header](documentation/guess_the_flag_header.png)
+![Guess the Flag! header](documentation/guess_the_flag_header.png)
 
 ---
 
 # *Guess the Flag!*
 
 This quiz is an interactive way for visitors to learn about the different countries of the world, by identifying their flags.
-For those who are interested in global affairs or geography, it is a great learning aide, as the flags are presented at random.  It gives immediate feedback based on the visitors' answers.  It suggests a challenge to them to improve their score, which is recorded as correct/incorrect.
+For those who are interested in global affairs or geography, it is a great learning aide, as the flags are presented in random order.  It gives immediate feedback based on the visitors' answers.  It suggests a challenge to them to improve their score, which is recorded as correct and incorrect.
 
 The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-flag)
 
 ![Responsive Mockup](documentation/responsive_mockup.png)
 
-
----
-## User Stories
-=======================
----
-
-# Guess the Flag!
-
-The quiz is an interactive way to learn about the different countries of the world, through identifying their flags.
-
-![Responsive Mockup](media/dublin_pug_rescue_mockup.png)
-
 ## Features 
 
 ### Existing Features
 
-- __Navigation Bar__
+- __Guess the Flag! Header__
 
-- This appears at the top of all 4 pages.  The logo is on the right side, which is a link to the home page itself.  
-- The links on the left side are to the Home page, Meet our Pugs page, and Contact us page and are uniform across pages.
-- These 3 navigation links change color and are underlined when the user hovers the cursor over them, when viewed on small laptops and larger screen sizes (992px and larger).
-- These elements ensure the user can easily navigate their way through and around the website.
+- This appears at the top of all pages.  The logo is to the left side, which is the United Nations logo.  
+- The heading is to the right of the logo.
 
-![Nav Bar](media/dublin_pug_rescue_nav.png)
+![Header](documentation/guess_the_flag_header.png)
 
-- __The Home page hero image__
+- __Introduction to the quiz__
 
   - Here we have an attractive background image, overlaid with the name of the organization, along with the suggested action words a user might take.
   
