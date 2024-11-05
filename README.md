@@ -26,13 +26,13 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
   - Here the visitors are introduced to the quiz.  It is described in short, as well as the purpose presented.  The challenge to achieve a best score motivates the visitors to go through the quiz multiple times.
   
-![Landing](documentation/guess_the_flag_landing_intro_text.png)
+![Landing](documentation/guess_the_flag_intro_text.png)
 
 - __Start button__
 
-  - They are presented with a start button in order to initiate the first quiz round. 
+  - They are presented with a Start button in order to initiate the first quiz round. 
 
-![Start button](documentation/guess_the_flag_landing_start_button.png)
+![Start button](documentation/guess_the_flag_start_button.png)
 
 - __Presentation of the flag challenges__
 
@@ -43,26 +43,29 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
   - As the cursor is moved over any 1 of the 3 choices, the background changes from a light (UN) blue to black, and the text from black to white.
   
-![3 answer choices](documentation/guess_the_flag_question_highlighted.png)
+![3 answer choices](documentation/guess_the_flag_question_hover.png)
 
-- __The footer__ 
+- __Answers__ 
 
-  - The footer has 4 links to social media sites.  The links all open to a new tab to allow for easy navigation for the user. 
+  - As soon as the visitor clicks on 1 of the 3 choices, immediate feedback is given in the form of the background of the buttons changing to green or red, depending on the correct answer.  
 
-![Footer](media/dublin_pug_rescue_footer.png)
+![Answers](documentation/guess_the_flag_answer.png)
 
-- __Meet our Pugs page__
+  - In addition to the backgrounds of the answer choice buttons changing to green or red, the Next button also appears below them.  This allows the visitor to advance to the next flag in the quiz round.
 
-  - The page presents images of a variety of different age pugs, aiming to create interest from users in what the organization's mission is.
-  - This section is invaluable to the user as they can see, from a variety of different pugs, hopefully the possibility of further engaging the organization. 
+![Next button](documentation/guess_the_flag_next_button.png)
 
-![Meet our pugs page](media/dublin_pug_rescue_meet.png)
+- __Restart button__
 
-- __Contact us page__
+  - Once the visitor has progressed through the total number of flags in the quiz round, they are presented with a Restart button in place of the Next or Start buttons.
 
-  - Here the user can take action to contact the organization, whether with an interest in adopting, fostering, volunteering, or donating to the organization.  
+![Restart button](documentation/guess_the_flag_restart_button.png)
 
-![Contact us page](media/dublin_pug_rescue_contact.png)
+- __Counters section__
+
+  - Here the visitor can watch in real time the score tally accumulate with both correct and incorrect answers counted.  In addition, the total number of questions answered is also kept a running tally of.  The correct score is written in green, and the incorrect in red. 
+
+![Counters section](documentation/guess_the_flag_counters.png)
 
 - __Response page__
 
