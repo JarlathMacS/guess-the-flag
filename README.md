@@ -17,8 +17,8 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 - __Guess the Flag! Header__
 
-- This appears at the top of all pages.  The logo is to the left side, which is the United Nations logo.  
-- The heading is to the right of the logo.
+  - This appears at the top of all pages.  The logo is to the left side, which is the United Nations logo.  
+  - The heading is to the right of the logo.
 
 ![Header](documentation/guess_the_flag_header.png)
 
@@ -45,7 +45,7 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
   
 ![3 answer choices](documentation/guess_the_flag_question_hover.png)
 
-- __Answers__ 
+- __Answers__
 
   - As soon as the visitor clicks on 1 of the 3 choices, immediate feedback is given in the form of the background of the buttons changing to green or red, depending on the correct answer.  
 
@@ -67,15 +67,9 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 ![Counters section](documentation/guess_the_flag_counters.png)
 
-- __Response page__
-
-  - This page displays after the user has submitted their contact details.  It presents a confirmation and thank you message.  It promises that they will receive a reply within 24 hours, to preserve their interest.
-
-![Response page](media/dublin_pug_rescue_response.png)
-
 ### Possible future features
 
-- Providing more specific details about each pug pictured, biographies, etc.
+- Randomisation of the 2 possible incorrect answer choices presented along with the correct answer choice.  This would create a higher level of difficulty for the visitors.
 
 ## Testing 
 
@@ -83,7 +77,7 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 - Functionality, responsiveness, and appearance were all good.
 - The website was checked by using devtools to make sure it looks good on all screen sizes.
 - Manual testing showed all features work as intended.
-- The contact us form works as intended, and includes validation.
+- The logic of the counters was tested and passed to make sure the scores and tallies are accurate.
 
 ### Validator Testing 
 
