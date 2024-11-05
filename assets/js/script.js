@@ -37,7 +37,7 @@ function startQuiz() {
     answerContainer.classList.remove('hide');
 
     // Math.random generates random numbers
-    shuffledFlags = flagDeck.sort(() => Math.random() - .5);
+    shuffledFlags = flagDeck.sort(() => Math.random() - 0.5);
     //Start with the first flag in the shuffled deck
     currentFlagIndex = 0;
 
@@ -128,7 +128,7 @@ function selectAnswer(e) {
 
     Array.from(answerContainer.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
 
     if (shuffledFlags.length > currentFlagIndex + 1) {
         nextButton.classList.remove('hide');

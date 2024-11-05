@@ -82,9 +82,25 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official W3C validator.
+  - No errors or warnings were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarlathmacs.github.io%2Fguess-the-flag%2F)
+
+![HTML Validator](documentation/guess_the_flag_w3c_html.png)
+
 - CSS
-  - No errors were found when passing through the official (Jigsaw) validator.
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjarlathmacs.github.io%2Fguess-the-flag%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+![CSS Validator](documentation/guess_the_flag_w3c_css.png)
+
+- JavaScript
+  - No errors or warnings were found when passing through the official [Jshint validator](https://jshint.com/)
+    - The following metrics were returned: 
+    - There are 16 functions in this file.
+    - Function with the largest signature takes 2 arguments, while the median is 0.
+    - Largest function has 14 statements in it, while the median is 2.
+    - The most complex function has a cyclomatic complexity value of 4 while the median is 1.
+
+![JS Validator](documentation/guess_the_flag_jshint.png)
+
 - Lighthouse
   - Accessibility of color palette used, and alt attributes, etc. was confirmed.
 
