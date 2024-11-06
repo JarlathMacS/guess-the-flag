@@ -7,10 +7,6 @@
 
 /* General styles */
 body {
-    /* background-color: #ffffff; */
-    /* width: 100%; */
-    /* margin-left: 0;
-    margin-top: 0; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,21 +26,11 @@ header {
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.36);
 }
 
-/* --------- Heading --------- */
 h1 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1.2px;
-
     font-size: 1.4rem;
-    /* padding-bottom: 20px;
-    padding-top: 20px; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
-    width: 100%;
-    margin-top: 0; */
 }
 
 .logo {
@@ -60,37 +46,16 @@ main {
     margin-top: 72px;
 }
 
-/* Quiz container */
-/* .quiz-container {
-    width: 90vw;
-    height: 66vh;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 .intro-to-quiz {
-    /* display: flex;
-    align-items: center; */
     text-align: center;
-    /* justify-content: center; */
     background-color: #ffffff;
     width: 75vw;
-    /* height: 55vh; */
     font-size: 120%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
-    /* border-radius: 15%; */
     padding: 19px;
 }
-
-/* .flag-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-    margin-bottom: 15px;
-} */
 
 #flag-image {
     height: 240px;
@@ -107,21 +72,17 @@ main {
 }
 
 #answer-wrapper {
-    /* height: 30vh; */
-    /* padding-bottom: 10px; */
     margin-bottom: 10px;
 }
 
 .answer-container {
     display: flex;
     flex-direction: column;
-    /* width: 90vw; */
     align-items: center;
     justify-content: center;
 }
 
 .control-wrapper {
-    /* height: 10vh; */
     margin-bottom: 20px;
 }
 
@@ -143,13 +104,6 @@ main {
     font-family: "Forum", serif;
     margin-bottom: 5px;
 }
-
-/* .start-btn.hide .next-btn.hide {
-    .control-wrapper {
-        margin-bottom: 102px;
-    }
-
-} */
 
 .btn:hover {
     background-color: black;
@@ -175,7 +129,6 @@ footer {
 
 .counter-container {
     width: 95vw;
-    /* height: 15vh; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
@@ -213,7 +166,8 @@ footer {
     font-weight: bold;
 }
 
-/* ------ << MEDIA >> ------- */
+/* --------- Media queries --------- */
+
 @media screen and (min-width: 320px) {
     #intro-to-quiz {
         font-size: 125%;
@@ -222,8 +176,7 @@ footer {
     }
 }
 
-/* MEDIA for Tablets*/
-/* --------- Media queries */
+/* for tablets */
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -235,7 +188,6 @@ footer {
     }
 
     main {
-        /* flex-direction: column; */
         margin-top: 97px;
     }
 
@@ -250,19 +202,14 @@ footer {
     }
 
     #answer-wrapper {
-        /* height: 30vh; */
-        /* padding-bottom: 10px; */
         margin-top: 100px;
         margin-bottom: 49.5px;
     }
 
     .answer-container {
         flex-direction: row;
-        /* width: 90vw; */
-        /* align-items: center; */
         justify-content: space-evenly;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -284,7 +231,6 @@ footer {
         margin-top: 60px;
         margin-bottom: 49.5px;
     }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -298,7 +244,6 @@ footer {
     }
 
     main {
-        /* flex-direction: column; */
         margin-top: 117px;
     }
 
@@ -343,16 +288,7 @@ footer {
     }
 
     .btn {
-        /* background-color: #009edb;
-        color: black;
-        padding: 30px; */
         font-size: 175%;
-        /* font-weight: bold;
-        border: 1px transparent;
-        border-radius: 10px;
-        text-transform: uppercase;
-        font-family: "Forum", serif;
-        margin-bottom: 5px; */
     }
 }
 
@@ -368,7 +304,6 @@ footer {
     }
 
     main {
-        /* flex-direction: column; */
         margin-top: 182px;
     }
 

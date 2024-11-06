@@ -1,6 +1,6 @@
-//Certain logic was used from the following https://github.com/WebDevSimplified/JavaScript-Quiz-App
+// Certain logic was used from the following https://github.com/WebDevSimplified/JavaScript-Quiz-App
 
-//Variables
+// Variables
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const introElement = document.getElementById('intro-to-quiz');
@@ -38,13 +38,13 @@ function startQuiz() {
 
     // Math.random generates random numbers
     shuffledFlags = flagDeck.sort(() => Math.random() - 0.5);
-    //Start with the first flag in the shuffled deck
+    // Start with the first flag in the shuffled deck
     currentFlagIndex = 0;
 
     nextFlag();
-    //Removes the previous quiz score
+    // Removes the previous quiz score
     clearCounters();
-    //Set the progress counter 
+    // Set the progress counter 
     counterElement.innerText = '1';
 }
 
@@ -73,7 +73,7 @@ function showFlag(country) {
         const button = document.createElement('button');
         button.innerText = choice.text;
         button.classList.add('btn');
-        //Assign the correct button only
+        // Assign the correct button only
         if (choice.correct) {
             button.dataset.correct = choice.correct;
         }
@@ -189,7 +189,6 @@ function incrementIncorrect() {
  * Array of (10) country objects
  */
 const flagDeck = [{
-
         image: `assets/images/flags/pl.jpg`,
         choices: [{
                 text: 'United Kingdom',
