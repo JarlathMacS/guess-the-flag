@@ -17,7 +17,7 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 - __Guess the Flag! Header__
 
-  - This appears at the top of all pages.  The logo is to the left side, which is the United Nations logo.  
+  - This appears at the top of all pages.  The logo is to the left side.  
   - The heading is to the right of the logo.
 
 ![Header](documentation/guess_the_flag_header.png)
@@ -41,7 +41,7 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 ![Flag with 3 answer choices](documentation/guess_the_flag_question.png)
 
-  - As the cursor is moved over any 1 of the 3 choices, the background changes from a light (UN) blue to black, and the text from black to white.
+  - As the cursor is moved over any 1 of the 3 choices, the background changes from a light blue to black, and the text from black to white.
   
 ![3 answer choices](documentation/guess_the_flag_question_hover.png)
 
@@ -69,6 +69,7 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 ### Possible future features
 
+- The site can relatively easily be scaled up, in increasing the number of flags which are presented to the visitors.
 - Randomisation of the 2 possible incorrect answer choices presented along with the correct answer choice.  This would create a higher level of difficulty for the visitors.
 
 ## Testing 
@@ -84,27 +85,37 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 - HTML
   - No errors or warnings were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarlathmacs.github.io%2Fguess-the-flag%2F)
 
-![HTML Validator](documentation/guess_the_flag_w3c_html.png)
+![HTML validator](documentation/guess_the_flag_w3c_html.png)
 
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjarlathmacs.github.io%2Fguess-the-flag%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-![CSS Validator](documentation/guess_the_flag_w3c_css.png)
+![CSS validator](documentation/guess_the_flag_w3c_css.png)
 
 - JavaScript
-  - No errors or warnings were found when passing through the official [Jshint validator](https://jshint.com/)
+  - No errors or warnings were found when passing through the [Jshint validator](https://jshint.com)
     - The following metrics were returned: 
     - There are 16 functions in this file.
     - Function with the largest signature takes 2 arguments, while the median is 0.
     - Largest function has 14 statements in it, while the median is 2.
     - The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
-![JS Validator](documentation/guess_the_flag_jshint.png)
+![JS validator](documentation/guess_the_flag_jshint.png)
+
+## Accessibility
 
 - Lighthouse
   - Accessibility of color palette used, and alt attributes, etc. was confirmed.
 
-![Lighthouse](media/lighthouse.png)
+![Lighthouse](documentation/guess_the_flag_lighthouse.png)
+
+## Responsiveness
+
+- The website was checked for responsiveness with [Am I Responsive](https://ui.dev/amiresponsive?url=https://jarlathmacs.github.io/guess-the-flag)
+
+![Responsive Mockup](documentation/responsive_mockup.png)
+
+## Bugs
 
 ### Unfixed Bugs
 
@@ -116,22 +127,16 @@ No unfixed bugs.
   - In the GitHub repository, click on the Settings tab.  On the left menu, click on the pages option.
   - Under the build and deployment, under branch, select main and root options.  Click the save button. 
 
-The live link can be found here - (https://jarlathmacs.github.io/portfolio-project-1/index.html)
+The live site can be found at this [link](https://jarlathmacs.github.io/guess-the-flag)
 
 ## Credits 
 
 ### Content 
 
-- The HTML code to make the social media links in the footer was taken from the Love Running project.
-- The CSS code in the media query for >=1200px for the reasons to own a dog section, is taken from the Love Running project.
-- The icons in the footer and throughout the website were taken from [Font Awesome](https://fontawesome.com).
-- The text used in the Why get a dog section was taken from (https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-q-and-a-how-owning-pets-can-lead-to-a-healthier-lifestyle)
-- The text used in the 5 Reasons to adopt section was taken from (https://www.aspca.org/news/10-reasons-adopt-shelter-dog)
+- Certain logic was used from the following repository on [GitHub](https://github.com/WebDevSimplified/JavaScript-Quiz-App)
 
 ### Media
 
-- The favicon and logo were created using the website [Brandmark](https://brandmark.io)
-- The hero image was taken from (https://www.pugsandkisses.com/listing/898987938/pug-wall-art-hats-and-ties-pug-art-print)
-- The images used for the Meet our Pugs page were taken from [Austin Pug Rescue](https://austinpugrescue.com)
-- The image for the circle-cover-bg element and the Contact us page were taken from (https://www.instagram.com/ring0thepug)
-- The image in the 5 Reasons to adopt was taken from (https://www.google.com/url?sa=i&url=https%3A%2F%2Fespace-trail-du-couserans.com%2F%3Fs%3Dpugs-life-movie-poster-%25E2%2580%2593-your-art-by-you-bb-Ayd6LWfl&psig=AOvVaw2trlyuYa4xoO13IRaztsVm&ust=1721712418610000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqGAoTCIiC5ez0uYcDFQAAAAAdAAAAABC1EQ)
+- The favicon was created using the website [Font Awesome](https://fontawesome.com/icons/flag?f=classic&s=solid&pc=%23009edb&sc=%23009edb) and converted using the website [Favicon.io](https://favicon.io/favicon-converter)
+- The logo and colour scheme were taken from the website of the [UN](https://www.un.org/styleguide/pdf/UN_brand_identity_quick_guide_2020.pdf)
+- The flag images were downloaded from [Flagpedia.net](https://flagcdn.com/h240-jpeg.zip)
