@@ -41,7 +41,7 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 ![Flag with 3 answer choices](documentation/guess_the_flag_question.png)
 
-  - As the cursor is moved over any 1 of the 3 choices, the background changes from a light blue to black, and the text from black to white.
+  ~ As the cursor is moved over any 1 of the 3 choices, the background changes from a light blue to black, and the text from black to white.
   
 ![3 answer choices](documentation/guess_the_flag_question_hover.png)
 
@@ -51,7 +51,7 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 ![Answers](documentation/guess_the_flag_answer.png)
 
-  - In addition to the backgrounds of the answer choice buttons changing to green or red, the Next button also appears below them.  This allows the visitor to advance to the next flag in the quiz round.
+  ~ In addition to the backgrounds of the answer choice buttons changing to green or red, the Next button also appears below them.  This allows the visitor to advance to the next flag in the quiz round.
 
 ![Next button](documentation/guess_the_flag_next_button.png)
 
@@ -131,8 +131,10 @@ The live site can be found at this [link](https://jarlathmacs.github.io/guess-th
 
 ## Credits 
 
-### Content 
+### Content
 
+- Wireframes were made for the website using [Balsamiq](https://balsamiq.com)
+![Balsamiq](documentation/guess_the_flag_balsamiq.png)
 - Certain logic was used from the following repository on [GitHub](https://github.com/WebDevSimplified/JavaScript-Quiz-App)
 
 ### Media
