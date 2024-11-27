@@ -125,7 +125,7 @@ No unfixed bugs.
 
 - The site was deployed to GitHub pages.  The steps for deployment are as follows: 
   - In the GitHub repository, click on the Settings tab.  On the left menu, click on the pages option.
-  - Under the build and deployment, under branch, select resubmission and root options.  Click the save button. 
+  - Under the build and deployment, under branch, select resubmission1 and root options.  Click the save button. 
 
 The live site can be found at this [link](https://jarlathmacs.github.io/guess-the-flag)
 
