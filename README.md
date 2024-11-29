@@ -109,6 +109,12 @@ The site can be accessed by this [link](https://jarlathmacs.github.io/guess-the-
 
 ![Lighthouse](documentation/guess_the_flag_lighthouse.png)
 
+- isSemantic
+  - The website was checked for HTML outline semantic markup with [isSemantic](https://issemantic.net/schema-markup-validator)
+  - HTML outline semantic markup was validated as all good!
+
+![isSemantic](documentation/guess_the_flag_semantic.png)
+
 ## Responsiveness
 
 - The website was checked for responsiveness with [Am I Responsive](https://ui.dev/amiresponsive?url=https://jarlathmacs.github.io/guess-the-flag)
